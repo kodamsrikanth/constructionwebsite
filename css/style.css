@@ -751,12 +751,68 @@ section {
   line-height: 2;
 }
 
-.contact {
-  background: var(--black);
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.contact .heading {
-  color: var(--white);
+.contact .row .contact-info-container {
+  width: 40rem;
+}
+
+.contact .row .contact-info-container .box {
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact .row .contact-info-container .box i {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 1.7rem;
+  background: var(--yellow);
+  color: var(--light-bg);
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.contact .row .contact-info-container .box h3 {
+  font-size: 2rem;
+  color: #263238;
+  padding-bottom: 1rem;
+}
+
+.contact .row .contact-info-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2;
+}
+
+.contact .row .contact-info-container .share {
+  padding-top: 1rem;
+}
+
+.contact .row .contact-info-container .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: #263238;
+  color: #fff;
+  margin-right: .1rem;
+  text-align: center;
+}
+
+.contact .row .contact-info-container .share a:hover {
+  background: var(--yellow);
 }
 
 .contact .row {
@@ -775,37 +831,6 @@ section {
   width: 100%;
 }
 
-.contact .row form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 41rem;
-          flex: 1 1 41rem;
-  background: var(--white);
-  padding: 2rem;
-}
-
-.contact .row form h3 {
-  font-size: 2.5rem;
-  color: var(--black);
-  text-transform: capitalize;
-}
-
-.contact .row form .box {
-  margin: .7rem 0;
-  width: 100%;
-  padding: 1.5rem 0;
-  border-bottom: var(--border);
-  font-size: 1.6rem;
-  color: var(--light-color);
-}
-
-.contact .row form .box:focus {
-  border-color: var(--yellow);
-}
-
-.contact .row form textarea {
-  height: 15rem;
-  resize: none;
-}
 
 .blogs {
   background: var(--light-bg);
