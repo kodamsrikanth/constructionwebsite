@@ -65,6 +65,12 @@ var swiper = new Swiper(".reviews-slider", {
 var swiper = new Swiper(".blogs-slider", {
    loop:true,
    grabCursor:true,
+
+   autoplay: {
+      delay: 800,
+      disableOnInteraction: true,
+  },
+  
    spaceBetween: 20,
    breakpoints: {
       640: {
@@ -82,6 +88,12 @@ var swiper = new Swiper(".blogs-slider", {
 var swiper = new Swiper(".logo-slider", {
    loop:true,
    grabCursor:true,
+
+   autoplay: {
+      delay: 800,
+      disableOnInteraction: true,
+  },
+
    spaceBetween: 20,
    breakpoints: {
       450: {
